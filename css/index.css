@@ -22,7 +22,7 @@ html {
 .header {
   height: 100vh;
   width: 100vw;
-  background: url("../assets/images/Lion.png") no-repeat;
+  background: url("../assets/images/Lion.jpg") no-repeat;
   background-size: cover;
   color: white;
   display: flex;
@@ -128,18 +128,38 @@ article{
   height: 320px;
 }
 
-.spirale_img::after{
+.spirale_img::after, .stag_img::after{
   content: "";
   height: 320px;
   width: 400px;
   display: block;
-  background: url("../assets/images/Spirale.jpg");
   background-size: cover;
+}
+
+.spirale_img::after {
+  background: url("../assets/images/Spirale.jpg");
   float: right;
-  opacity: 1;
+}
+
+.spirale_img, .stag_img{
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .spirale_img{
-  background-color: rgba(0, 0, 0, 0.2);
   width: 650px;
+}
+
+.what_we_do_container{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.stag_img{
+  height: 60%;
+  width: 400px;
+  margin-right: 6%;
+}
+
+.stag_img::after{
+  background: url("../assets/images/téléchargement.jpeg") no-repeat;
 }
