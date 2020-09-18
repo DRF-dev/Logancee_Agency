@@ -30,10 +30,10 @@ html {
 }
 
 nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 2% 2% 0px 2%;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  margin: 2% 2% 0px 2%;
 }
 
 nav h1 {
@@ -41,19 +41,20 @@ nav h1 {
 }
 
 .burger-menu,
-.header--title--slide-background {
+.header--title--slide-background,
+.header--number-of-slide span {
   cursor: pointer;
 }
 
 .burger-menu {
-  width: 50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .burger-menu span {
   height: 5px;
-  width: 100%;
+  width: 50px;
   background-color: white;
   margin-top: 6px;
 }
@@ -72,4 +73,21 @@ nav h1 {
 
 .header--title--presentation {
   max-width: 960px;
+}
+
+.header--number-of-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.header--number-of-slide span {
+  width: 18px;
+  height: 18px;
+  border-radius: 90px;
+  border: 2px solid white;
+  margin: 0px 0.2% 0.5% 0.2%;
+}
+
+.active{
+  background-color: white;
 }
