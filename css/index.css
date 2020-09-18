@@ -103,3 +103,23 @@ article{
 article section{
   max-width: 960px;
 }
+
+.about_us{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+}
+
+.about_us div{
+  width: 70%;
+}
+
+.about_us div p {
+  width: 70%;
+  float: right;
+}
+
+.spirale_img{
+  width: 320px;
+  height: 320px;
+}
