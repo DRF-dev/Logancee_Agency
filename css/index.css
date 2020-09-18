@@ -176,7 +176,7 @@ article h3{
 }
 
 .stag_img::after{
-  background: url("../assets/images/téléchargement.jpeg") no-repeat;
+  background: url("../assets/images/stag.jpeg") no-repeat;
 }
 
 .active-nav {
@@ -188,14 +188,14 @@ article h3{
 }
 
 footer {
-  background-color: black;
+  background-color: rgb(28, 28, 28);
   color: white;
-  height: 150px;
+  height: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 footer div {
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
