@@ -96,11 +96,8 @@ html {
 
 article{
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
-  align-items: center;
-}
-
-article section{
   max-width: 960px;
 }
 
@@ -110,16 +107,39 @@ article section{
   align-items: center;
 }
 
-.about_us div{
+.about_us .about_us_container{
   width: 70%;
 }
 
+.about_us_container h3{
+  border-bottom: 1px solid black;
+}
+
 .about_us div p {
-  width: 70%;
+  margin-top: -1.5%;
+  width: 85%;
   float: right;
+  font-size: 0.7em;
+  color: grey !important;
 }
 
 .spirale_img{
   width: 320px;
   height: 320px;
+}
+
+.spirale_img::after{
+  content: "";
+  height: 320px;
+  width: 400px;
+  display: block;
+  background: url("../assets/images/Spirale.jpg");
+  background-size: cover;
+  float: right;
+  opacity: 1;
+}
+
+.spirale_img{
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 650px;
 }
