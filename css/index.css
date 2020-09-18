@@ -1,48 +1,75 @@
 @import "./reset.css";
 
-@font-face{
+@font-face {
   font-family: 'montserra';
   src: url("../assets/fonts/Montserrat-Regular.ttf");
   font-weight: normal;
 }
 
-@font-face{
+@font-face {
   font-family: 'montserra';
   src: url("../assets/fonts/Montserrat-Bold.ttf");
   font-weight: bold;
 }
 
-html{
+html {
   font-family: 'montserra';
+  width: 100vw;
+  font-size: 1.5em;
 }
 
-.header{
+.header {
   height: 100vh;
+  width: 100vw;
   background: url("../assets/images/Lion.png") no-repeat;
   background-size: cover;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.header nav{
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1% 2% 1% 2%;
+  padding: 2% 2% 0px 2%;
 }
 
-.header nav h1{
+nav h1 {
   margin-top: 0;
 }
 
-.header nav .burger-menu{
+.burger-menu,
+.header--title--slide-background {
+  cursor: pointer;
+}
+
+.burger-menu {
   width: 50px;
   display: flex;
   flex-direction: column;
 }
 
-.header nav .burger-menu span{
+.burger-menu span {
   height: 5px;
   width: 100%;
-  background-color: red;
+  background-color: white;
   margin-top: 6px;
+}
+
+.header--title {
+  display: grid;
+  grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
+}
+
+.header--title--slide-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header--title--presentation {
+  max-width: 960px;
 }
