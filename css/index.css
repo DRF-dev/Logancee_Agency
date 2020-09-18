@@ -1,2 +1,17 @@
 @import "./reset.css";
-/*Montsera typo*/
+
+@font-face{
+  font-family: 'montserra';
+  src: url("../assets/fonts/Montserrat-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: 'montserra';
+  src: url("../assets/fonts/Montserrat-Bold.ttf");
+  font-weight: bold;
+}
+
+html{
+  font-family: 'montserra';
+}
