@@ -73,7 +73,7 @@ html {
   justify-content: center;
 }
 
-.header--title--presentation {
+.header--title--presentation, footer div {
   max-width: 960px;
 }
 
@@ -101,6 +101,14 @@ article{
   max-width: 960px;
 }
 
+article h2{
+  color: grey;
+}
+
+article h3{
+  font-size: 1.5em;
+}
+
 .about_us{
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -115,12 +123,19 @@ article{
   border-bottom: 1px solid black;
 }
 
-.about_us div p {
+.about_us--description, .we_do--description {
   margin-top: -1.5%;
   width: 85%;
-  float: right;
   font-size: 0.7em;
   color: grey !important;
+}
+
+.about_us--description{
+  float: right;
+}
+
+.we_do--description {
+  float: left;
 }
 
 .spirale_img{
@@ -162,4 +177,25 @@ article{
 
 .stag_img::after{
   background: url("../assets/images/téléchargement.jpeg") no-repeat;
+}
+
+.active-nav {
+  font-weight: bold;
+}
+
+.recent_work nav span {
+  font-size: 0.8em;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div {
+  font-size: 0.8em;
 }
